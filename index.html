@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My bio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/bdc513f1e1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="scrollbar">
+        <div class="scrollbar-container">
+            <div class="scrollbar-bar" id="mybar"></div>
+        </div>
+    </div>
+    <header id="header" class="d-flex flex-column justify-content-center">
+        <nav class="nav-menu">
+            <ul>
+                <li class="active"><a href="#imgs"><i class="fas fa-house-user"></i><span>Home</span></a></li>
+                <li><a href="#about"><i class="far fa-address-card"></i><span>Who am i</span></a></li>
+                <li><a href="#portfolio"><i class="fas fa-photo-video"></i><span>Portfolio</span></a></li>
+                <li><a href="#contact"><i class="fas fa-phone"></i><span>Contact</span></a></li>
+                <li><a href="#skills"><i class="fas fa-poll-h"></i><span>Skill</span></a></li>
+                <li><a href="" data-toggle="modal" data-target="#myModal" onclick="move()"><i class="fas fa-download"></i><span>Download Bio</span></a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <!--Isi modal-->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Downloading</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div id="myDownloadBar" class="athabiq-light-grey athabiq-round athabiq-small" style="width:0%">
+                        <div id="demo" class="text-center athabiq-round athabiq-light-grey athabiq-small">0%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="imgs" class="d-flex flex-column justify-content-center">
+        <div class="container">
+            <h1 class="carousel-caption" style="margin-bottom: 100px;">ATHABIQ</h1>
+            <h3 class="carousel-caption" style="margin-bottom: 50px;">I'm HUMAN</h3>
+        </div>
+    </section>
+    <main id="main" style="margin: 10px;">
+        <!--Ini section profil-->
+        <section id="about" class="about" style="margin-top: 20px;">
+            <div class="container">
+                <div class="section-title">
+                    <h2 style="margin-top: 0px;">Who am i</h2>
+                    <p>My name is Athabiq tuah wibisana</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img src="picture/pic1.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-8 pt-4 pt-lg-0 content">
+                        <h3>College student</h3>
+                        <p>
+                            College student of University Amikom Yogyakarta
+                        </p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <ul>
+                                    <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> 22 June 2001 </li>
+                                    <li><i class="icofont-rounded-right"></i><strong>Website:</strong> www.athabiq.web.id</li>
+                                    <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> 123456</li>
+                                    <li><i class="icofont-rounded-right"></i> <strong>City:</strong> Batam, Indonesia</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6">
+                                <ul>
+                                    <li><i class="icofont-rounded-right"></i> <strong>Age:</strong> 19</li>
+                                    <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> Don't have one</li>
+                                    <li><i class="icofont-rounded-right"></i><strong>Email:</strong> athabiqspam@gmail.com</li>
+                                    <li><i class="icofont-rounded-right"></i> <strong>Job:</strong> Server Guy</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--ini section protofolio-->
+        
+        <section id="portfolio" class="portfolio section-bg" style="margin-top: 20px;">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Portfolio</h2>
+                    <p>This is my Photo i hope you like it</p>
+                </div>
+                <div class="row portfolio-container">
+
+                    <div class="col-lg-4 col-md-6 portfolio-item">
+                        <div class="portfolio-wrap">
+                            <img src="picture/pic1.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Ini photo</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item">
+                        <div class="portfolio-wrap">
+                            <img src="picture/pic2.JPG" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Ini photo</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item">
+                        <div class="portfolio-wrap">
+                            <img src="picture/pic3.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Ini photo</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item">
+                        <div class="portfolio-wrap">
+                            <img src="picture/pic4.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Ini photo</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item">
+                        <div class="portfolio-wrap">
+                            <img src="picture/pic5.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Ini photo</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item">
+                        <div class="portfolio-wrap">
+                            <img src="picture/pic6.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Ini photo</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--INI section contact-->
+        <section id="contact" class="contact" style="margin-top: 20px;">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Contact</h2>
+                </div>
+                <div class="row content">
+
+                    <div class="col-lg-4">
+                        <div class="info content">
+                            <div style="margin: 50px;">
+                                <i class="fas fa-house-user"></i>
+                                <h4>Location:</h4>
+                                <p>Sei Harapan, Batam, Indonesia</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 info">
+                        <div style="margin: 50px;">
+                            <i class="far fa-address-card"></i>
+                            <h4>Email:</h4>
+                            <p>Athabiq@email.com</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 info">
+                        <div style="margin: 50px;">
+                            <i class="fas fa-phone"></i>
+                            <h4>Call:</h4>
+                            <p>+1 5589 55488 55s</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--ini Section skill-->
+        <section id="skills" class="skills section-bg" style="margin-top: 20px;">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Skills</h2>
+                    <p>This is what i can do</p>
+                </div>
+
+                <div class="row skills-content">
+
+                    <div class="col-lg-6">
+
+                        <div class="progress">
+                            <span class="skill">HTML</span>
+                            <div class="athabiq-light-grey athabiq-round athabiq-small">
+                                <div class="progress-bar athabiq-round" style="width: 50%">50%</div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill">CSS</span>
+                            <div class="athabiq-light-grey athabiq-round athabiq-small">
+                                <div class="progress-bar athabiq-round" style="width:50%">50%</div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill">Python</span>
+                            <div class="athabiq-light-grey athabiq-round athabiq-small">
+                                <div class="progress-bar athabiq-round" style="width:80%">80%</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6">
+
+                        <div class="progress">
+                            <span class="skill">Debian</span>
+                            <div class="athabiq-light-grey athabiq-round athabiq-small">
+                                <div class="progress-bar athabiq-round" style="width:80%">80%</div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill">FreeBSD</span>
+                            <div class="athabiq-light-grey athabiq-round athabiq-small">
+                                <div class="progress-bar athabiq-round" style="width:60%">60%</div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill">Photoshop</span>
+                            <div class="athabiq-light-grey athabiq-round athabiq-small">
+                                <div class="progress-bar athabiq-round" style="width:50%">50%</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <h2>The end of line</h2>
+    </div>
+    <!--INI smooth scroll script-->
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $('body').scrollspy({
+                target: ".nav-menu",
+                offset: 50
+            });
+            $(".nav-menu a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    event.preventDefault();
+
+
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+    <!--Ini progress bar script-->
+    <script>
+        window.onscroll = function () {
+            myFunction()
+        };
+
+        function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("mybar").style.width = scrolled + "%";
+        }
+    </script>
+    <!--download progress bar-->
+    <script>
+        function move() {
+            var elem = document.getElementById("myDownloadBar");
+            var width = 0;
+            var id = setInterval(frame, 10);
+
+            function frame() {
+                if (width >= 100) {
+                    clearInterval(id);
+                } else {
+                    width++;
+                    elem.style.width = width + '%';
+                    document.getElementById("demo").innerHTML = width * 1 + '%';
+                }
+            }
+        }
+    </script>
+    <!--INI timout-->
+    <script>
+        setTimeout(function () {
+            $('#myModal').modal('hide');
+        }, 7000);
+    </script>
+</body>
+
+</html>
